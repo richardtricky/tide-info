@@ -1,0 +1,32 @@
+name: Update Tide Overlay
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # Runs at 05:00 UTC every day
+  workflow_dispatch:      # Allows manual triggering from GitHub UI
+
+jobs:
+  update-tide-text:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run tide update script
+        run: python update_tide_overlay.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add tide.txt
+          git commit -m "Update tide.txt via scheduled workflow" || echo "No changes to commit"
+          git push

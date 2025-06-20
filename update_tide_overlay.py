@@ -11,19 +11,24 @@ def fetch_tide_data(api_key, lat, lon):
     resp.raise_for_status()
     return resp.json()
 
+def parse_iso(date_string):
+    """Handle dates ending with Z"""
+    if date_string.endswith("Z"):
+        date_string = date_string.replace("Z", "+00:00")
+    return datetime.fromisoformat(date_string)
+
 def format_tide_text(data):
     now = datetime.now(timezone.utc)
     upcoming = [
         e for e in data.get("extremes", [])
-        if datetime.fromisoformat(e["date"]) > now
+        if parse_iso(e["date"]) > now
     ][:2]
 
     if not upcoming:
         return "No upcoming tide data."
 
-    # 24-hour format, e.g. 14:30
     return " | ".join([
-        f"{e['type']} Tide: {datetime.fromisoformat(e['date']).strftime('%H:%M')}"
+        f"{e['type']} Tide: {parse_iso(e['date']).strftime('%H:%M')}"
         for e in upcoming
     ])
 

@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime, timezone
 
-API_KEY = "212ed417-7d00-412b-92f9-2d52852436b5"
+API_KEY = os.getenv("TIDE_API_KEY")
 LAT = 51.3932
 LON = -3.2710
 

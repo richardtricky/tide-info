@@ -24,6 +24,8 @@ jobs:
         run: pip install requests
 
       - name: 🐍 Run tide update script
+        env:
+          TIDE_API_KEY: ${{ secrets.TIDE_API_KEY }}
         run: python update_tide_overlay.py
 
       - name: 💾 Commit and Push Changes

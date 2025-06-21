@@ -2,7 +2,7 @@ name: Update Tide Overlay
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # Runs at 05:00 UTC every day
+    - cron: '0 */12 * * *'  # Runs every 12 hours
   workflow_dispatch:
 
 permissions:

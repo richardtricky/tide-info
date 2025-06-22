@@ -2,7 +2,7 @@ name: Update Tide Overlay
 
 on:
   schedule:
-    - cron: '0 */12 * * *'  # Runs every 12 hours
+    - cron: '0 */12 * * *'  # Runs every 12 hours at 00:00 and 12:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: 📥 Checkout Repository
         uses: actions/checkout@v3
+        with:
+          ref: main  # Change 'main' if your default branch is different
 
       - name: ⚙️ Set up Python
         uses: actions/setup-python@v4
@@ -28,10 +30,14 @@ jobs:
           TIDE_API_KEY: ${{ secrets.TIDE_API_KEY }}
         run: python update_tide_overlay.py
 
+      - name: 📝 Show updated tide.txt (for debug)
+        run: cat tide.txt
+
       - name: 💾 Commit and Push Changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add tide.txt
           git commit -m "Update tide.txt via scheduled workflow" || echo "No changes to commit"
-          git push
+          git pull --rebase origin main
+          git push origin main

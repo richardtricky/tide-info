@@ -2,12 +2,12 @@ import os
 import requests
 from datetime import datetime, timezone
 
-API_KEY = os.getenv("TIDE_API_KEY")
+API_KEY = os.getenv("TIDE_API_KEY")  # WorldTides API Key
 LAT = 51.4024
 LON = -3.2607
 
 def fetch_tide_data(api_key, lat, lon):
-    url = f"https://www.worldtides.info/api/v3?extremes&lat={lat}&lon={lon}&key={api_key}"
+    url = f"https://www.worldtides.info/api/v3?extremes&days=7&lat={lat}&lon={lon}&key={api_key}"
     resp = requests.get(url, timeout=10)
     resp.raise_for_status()
     return resp.json()
@@ -23,15 +23,16 @@ def format_tide_text(data):
     upcoming = [
         e for e in data.get("extremes", [])
         if parse_iso(e["date"]) > now
-    ][:2]
+    ]  # all upcoming tide extremes in the next 7 days
 
     if not upcoming:
         return "No upcoming tide data."
 
-    return " | ".join([
-        f"{e['type']} Tide: {parse_iso(e['date']).strftime('%H:%M')}"
+    # Join all tides with their time in HH:MM 24-hour format
+    return " | ".join(
+        f"{e['type']} Tide: {parse_iso(e['date']).strftime('%H:%M (%a)')}"
         for e in upcoming
-    ])
+    )
 
 def main():
     try:

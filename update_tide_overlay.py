@@ -1,13 +1,14 @@
 import os
 import requests
 from datetime import datetime, timezone
+from collections import defaultdict
 
-API_KEY = os.getenv("TIDE_API_KEY")  # WorldTides API Key
+API_KEY = os.environ.get("TIDE_API_KEY")
 LAT = 51.4024
 LON = -3.2607
 
 def fetch_tide_data(api_key, lat, lon):
-    url = f"https://www.worldtides.info/api/v3?extremes&days=7&lat={lat}&lon={lon}&key={api_key}"
+    url = f"https://www.worldtides.info/api/v3?extremes&lat={lat}&lon={lon}&key={api_key}"
     resp = requests.get(url, timeout=10)
     resp.raise_for_status()
     return resp.json()
@@ -23,22 +24,32 @@ def format_tide_text(data):
     upcoming = [
         e for e in data.get("extremes", [])
         if parse_iso(e["date"]) > now
-    ]  # all upcoming tide extremes in the next 7 days
+    ]
 
     if not upcoming:
         return "No upcoming tide data."
 
-    # Join all tides with their time in HH:MM 24-hour format
-    return " | ".join(
-        f"{e['type']} Tide: {parse_iso(e['date']).strftime('%H:%M (%a)')}"
-        for e in upcoming
-    )
+    # Group tides by day
+    tides_by_day = defaultdict(list)
+    for e in upcoming:
+        day_str = parse_iso(e['date']).strftime("%Y-%m-%d (%a)")
+        tides_by_day[day_str].append(
+            f"{e['type']} Tide at {parse_iso(e['date']).strftime('%H:%M')}"
+        )
+
+    # Sort by day and build output
+    output_lines = []
+    for day in sorted(tides_by_day.keys()):
+        tide_info = " | ".join(tides_by_day[day])
+        output_lines.append(f"{day}: {tide_info}")
+
+    return "\n".join(output_lines)
 
 def main():
     try:
         data = fetch_tide_data(API_KEY, LAT, LON)
         text = format_tide_text(data)
-        print(f"Updating tide.txt with: {text}")
+        print(f"Updating tide.txt with:\n{text}")
         with open("tide.txt", "w", encoding="utf-8") as f:
             f.write(text)
     except Exception as e:

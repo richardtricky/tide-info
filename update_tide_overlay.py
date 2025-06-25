@@ -1,37 +1,47 @@
-name: Update Tide Overlay
+import os
+import requests
+from datetime import datetime, timezone
 
-on:
-  schedule:
-    - cron: "0 */12 * * *"  # Runs every 12 hours
-  workflow_dispatch:
+API_KEY = os.getenv("TIDE_API_KEY")
+LAT = 51.3932
+LON = -3.2710
 
-permissions:
-  contents: write
+def fetch_tide_data(api_key, lat, lon):
+    url = f"https://www.worldtides.info/api/v3?extremes&lat={lat}&lon={lon}&key={api_key}"
+    resp = requests.get(url, timeout=10)
+    resp.raise_for_status()
+    return resp.json()
 
-jobs:
-  update-tide-text:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 📥 Checkout Repository
-        uses: actions/checkout@v3
+def parse_iso(date_string):
+    """Handle dates ending with Z"""
+    if date_string.endswith("Z"):
+        date_string = date_string.replace("Z", "+00:00")
+    return datetime.fromisoformat(date_string)
 
-      - name: ⚙️ Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.x"
+def format_tide_text(data):
+    now = datetime.now(timezone.utc)
+    upcoming = [
+        e for e in data.get("extremes", [])
+        if parse_iso(e["date"]) > now
+    ][:2]
 
-      - name: 📦 Install dependencies
-        run: pip install requests
+    if not upcoming:
+        return "No upcoming tide data."
 
-      - name: 🐍 Run tide update script
-        env:
-          TIDE_API_KEY: ${{ secrets.TIDE_API_KEY }}
-        run: python update_tide_overlay.py
+    return " | ".join([
+        f"{e['type']} Tide: {parse_iso(e['date']).strftime('%H:%M')}"
+        for e in upcoming
+    ])
 
-      - name: 💾 Commit and Push Changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add tide.txt
-          git commit -m "Update tide.txt via scheduled workflow" || echo "No changes to commit"
-          git push
+def main():
+    try:
+        data = fetch_tide_data(API_KEY, LAT, LON)
+        text = format_tide_text(data)
+        print(f"Updating tide.txt with: {text}")
+        with open("tide.txt", "w", encoding="utf-8") as f:
+            f.write(text)
+    except Exception as e:
+        print(f"Error fetching or writing tide data: {e}")
+
+if __name__ == "__main__":
+    main()

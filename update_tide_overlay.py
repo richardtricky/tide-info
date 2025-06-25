@@ -3,8 +3,8 @@ import requests
 from datetime import datetime, timezone
 
 API_KEY = os.environ.get("STORMGLASS_API_KEY")  # from GitHub secret
-LAT = 51.3932
-LON = -3.2710
+LAT = 51.4024
+LON = -3.2607
 
 def fetch_tide_data(api_key, lat, lon):
     url = f"https://api.stormglass.io/v2/tide/extremes/point?lat={lat}&lng={lon}"

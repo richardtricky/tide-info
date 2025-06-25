@@ -2,6 +2,7 @@ import os
 import requests
 from datetime import datetime
 from collections import defaultdict
+from zoneinfo import ZoneInfo  # <-- add this import
 
 # Configuration
 API_KEY = os.environ.get("UKHO_API_KEY")
@@ -22,8 +23,10 @@ def fetch_tide_data(days: int):
 
 
 def parse_datetime(dt_str: str) -> datetime:
-    """Convert API's ISO string to Python datetime (UTC)."""
-    return datetime.fromisoformat(dt_str.replace("Z", "+00:00"))
+    """Convert API's ISO string to Python datetime in UK local time (BST/GMT)."""
+    dt_utc = datetime.fromisoformat(dt_str.replace("Z", "+00:00"))
+    dt_local = dt_utc.astimezone(ZoneInfo("Europe/London"))  # Convert to UK timezone with DST
+    return dt_local
 
 
 def format_tide_text(events: list) -> str:

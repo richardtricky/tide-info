@@ -4,8 +4,8 @@ from datetime import datetime, timezone
 from collections import defaultdict
 
 API_KEY = os.environ.get("TIDE_API_KEY")
-LAT = 51.4853
-LON = -2.7109
+LAT = 51.5045
+LON = -2.7062
 
 def fetch_tide_data(api_key, lat, lon):
     # Request up to 7 days of extremes

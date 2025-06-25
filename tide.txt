@@ -1,7 +1,7 @@
-26-06-2025 (Thu): Low Tide at 02:00 | High Tide at 07:28 | Low Tide at 14:22 | High Tide at 19:48
-27-06-2025 (Fri): Low Tide at 02:54 | High Tide at 08:17 | Low Tide at 15:11 | High Tide at 20:35
-28-06-2025 (Sat): Low Tide at 03:38 | High Tide at 09:04 | Low Tide at 15:52 | High Tide at 21:20
-29-06-2025 (Sun): Low Tide at 04:16 | High Tide at 09:48 | Low Tide at 16:27 | High Tide at 22:02
-30-06-2025 (Mon): Low Tide at 04:49 | High Tide at 10:29 | Low Tide at 16:58 | High Tide at 22:43
-01-07-2025 (Tue): Low Tide at 05:18 | High Tide at 11:11 | Low Tide at 17:28 | High Tide at 23:25
-02-07-2025 (Wed): Low Tide at 05:49 | High Tide at 11:56
+26-06-2025 (Thu): Low Tide at 01:50 | High Tide at 07:21 | Low Tide at 14:09 | High Tide at 19:43
+27-06-2025 (Fri): Low Tide at 02:34 | High Tide at 08:06 | Low Tide at 14:52 | High Tide at 20:27
+28-06-2025 (Sat): Low Tide at 03:17 | High Tide at 08:51 | Low Tide at 15:32 | High Tide at 21:12
+29-06-2025 (Sun): Low Tide at 03:57 | High Tide at 09:35 | Low Tide at 16:10 | High Tide at 21:56
+30-06-2025 (Mon): Low Tide at 04:36 | High Tide at 10:20 | Low Tide at 16:48 | High Tide at 22:41
+01-07-2025 (Tue): Low Tide at 05:15 | High Tide at 11:06 | Low Tide at 17:27 | High Tide at 23:29
+02-07-2025 (Wed): Low Tide at 05:55 | High Tide at 11:55

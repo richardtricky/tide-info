@@ -2,36 +2,34 @@ import os
 import requests
 from datetime import datetime, timezone
 
-API_KEY = os.getenv("TIDE_API_KEY")
+API_KEY = os.environ.get("STORMGLASS_API_KEY")  # from GitHub secret
 LAT = 51.3932
 LON = -3.2710
 
 def fetch_tide_data(api_key, lat, lon):
-    url = f"https://www.worldtides.info/api/v3?extremes&lat={lat}&lon={lon}&key={api_key}"
-    resp = requests.get(url, timeout=10)
+    url = f"https://api.stormglass.io/v2/tide/extremes/point?lat={lat}&lng={lon}"
+    resp = requests.get(
+        url,
+        headers={"Authorization": api_key},
+        timeout=10,
+    )
     resp.raise_for_status()
     return resp.json()
-
-def parse_iso(date_string):
-    """Handle dates ending with Z"""
-    if date_string.endswith("Z"):
-        date_string = date_string.replace("Z", "+00:00")
-    return datetime.fromisoformat(date_string)
 
 def format_tide_text(data):
     now = datetime.now(timezone.utc)
     upcoming = [
-        e for e in data.get("extremes", [])
-        if parse_iso(e["date"]) > now
+        e for e in data.get("data", [])
+        if datetime.fromisoformat(e["time"].replace("Z", "+00:00")) > now
     ][:2]
 
     if not upcoming:
         return "No upcoming tide data."
 
-    return " | ".join([
-        f"{e['type']} Tide: {parse_iso(e['date']).strftime('%H:%M')}"
+    return " | ".join(
+        f"{e['type'].title()} Tide: {datetime.fromisoformat(e['time'].replace('Z', '+00:00')).strftime('%H:%M')}"
         for e in upcoming
-    ])
+    )
 
 def main():
     try:

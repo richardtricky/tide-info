@@ -1,8 +1,7 @@
-26-06-2025 (Thu): Low at 02:04 | High at 08:17 | Low at 14:26 | High at 20:35
 27-06-2025 (Fri): Low at 02:56 | High at 09:07 | Low at 15:12 | High at 21:23
 28-06-2025 (Sat): Low at 03:42 | High at 09:53 | Low at 15:52 | High at 22:07
 29-06-2025 (Sun): Low at 04:21 | High at 10:35 | Low at 16:26 | High at 22:47
 30-06-2025 (Mon): Low at 04:55 | High at 11:13 | Low at 16:57 | High at 23:25
 01-07-2025 (Tue): Low at 05:25 | High at 11:48 | Low at 17:29
 02-07-2025 (Wed): High at 00:03 | Low at 05:58 | High at 12:25 | Low at 18:06
-03-07-2025 (Thu): High at 00:44
+03-07-2025 (Thu): High at 00:44 | Low at 06:38 | High at 13:08 | Low at 18:54

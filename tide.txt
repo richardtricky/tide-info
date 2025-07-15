@@ -1,7 +1,7 @@
-14-07-2025 (Mon): Low at 03:52 | High at 10:01 | Low at 16:02 | High at 22:18
 15-07-2025 (Tue): Low at 04:28 | High at 10:38 | Low at 16:36 | High at 22:56
 16-07-2025 (Wed): Low at 05:05 | High at 11:16 | Low at 17:13 | High at 23:37
 17-07-2025 (Thu): Low at 05:44 | High at 11:58 | Low at 17:55
 18-07-2025 (Fri): High at 00:24 | Low at 06:30 | High at 12:48 | Low at 18:45
 19-07-2025 (Sat): High at 01:21 | Low at 07:25 | High at 13:49 | Low at 19:51
 20-07-2025 (Sun): High at 02:32 | Low at 08:36 | High at 15:05 | Low at 21:16
+21-07-2025 (Mon): High at 03:52 | Low at 09:59 | High at 16:26 | Low at 22:44

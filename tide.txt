@@ -1,7 +1,7 @@
-23-10-2025 (Thu): Low at 02:32 | High at 08:36 | Low at 14:46 | High at 20:49
 24-10-2025 (Fri): Low at 03:00 | High at 09:04 | Low at 15:13 | High at 21:16
 25-10-2025 (Sat): Low at 03:22 | High at 09:30 | Low at 15:36 | High at 21:44
 26-10-2025 (Sun): Low at 02:41 | High at 08:57 | Low at 14:56 | High at 21:12
 27-10-2025 (Mon): Low at 03:01 | High at 09:26 | Low at 15:22 | High at 21:44
 28-10-2025 (Tue): Low at 03:30 | High at 10:02 | Low at 15:59 | High at 22:28
 29-10-2025 (Wed): Low at 04:12 | High at 10:58 | Low at 16:56 | High at 23:36
+30-10-2025 (Thu): Low at 05:19 | High at 12:20 | Low at 18:32

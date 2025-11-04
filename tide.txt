@@ -1,7 +1,7 @@
-03-11-2025 (Mon): High at 04:30 | Low at 10:39 | High at 16:54 | Low at 23:09
 04-11-2025 (Tue): High at 05:19 | Low at 11:30 | High at 17:43 | Low at 23:59
 05-11-2025 (Wed): High at 06:05 | Low at 12:19 | High at 18:30
 06-11-2025 (Thu): Low at 00:45 | High at 06:51 | Low at 13:06 | High at 19:16
 07-11-2025 (Fri): Low at 01:30 | High at 07:35 | Low at 13:50 | High at 20:01
 08-11-2025 (Sat): Low at 02:11 | High at 08:18 | Low at 14:31 | High at 20:45
 09-11-2025 (Sun): Low at 02:50 | High at 09:01 | Low at 15:12 | High at 21:30
+10-11-2025 (Mon): Low at 03:28 | High at 09:47 | Low at 15:54 | High at 22:19

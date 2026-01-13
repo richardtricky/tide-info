@@ -1,7 +1,7 @@
-12-01-2026 (Mon): High at 00:30 | Low at 06:25 | High at 13:00 | Low at 18:59
 13-01-2026 (Tue): High at 01:37 | Low at 07:37 | High at 14:12 | Low at 20:16
 14-01-2026 (Wed): High at 02:58 | Low at 08:59 | High at 15:29 | Low at 21:36
 15-01-2026 (Thu): High at 04:09 | Low at 10:10 | High at 16:33 | Low at 22:41
 16-01-2026 (Fri): High at 05:04 | Low at 11:07 | High at 17:26 | Low at 23:33
 17-01-2026 (Sat): High at 05:51 | Low at 11:56 | High at 18:12
 18-01-2026 (Sun): Low at 00:20 | High at 06:35 | Low at 12:42 | High at 18:55
+19-01-2026 (Mon): Low at 01:03 | High at 07:15 | Low at 13:25 | High at 19:34

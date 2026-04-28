@@ -1,7 +1,7 @@
-27-04-2026 (Mon): High at 04:26 | Low at 10:49 | High at 17:02 | Low at 23:08
 28-04-2026 (Tue): High at 05:24 | Low at 11:41 | High at 17:52 | Low at 23:57
 29-04-2026 (Wed): High at 06:11 | Low at 12:25 | High at 18:35
 30-04-2026 (Thu): Low at 00:41 | High at 06:53 | Low at 13:06 | High at 19:14
 01-05-2026 (Fri): Low at 01:20 | High at 07:31 | Low at 13:42 | High at 19:50
 02-05-2026 (Sat): Low at 01:57 | High at 08:06 | Low at 14:15 | High at 20:22
 03-05-2026 (Sun): Low at 02:30 | High at 08:38 | Low at 14:44 | High at 20:52
+04-05-2026 (Mon): Low at 03:00 | High at 09:09 | Low at 15:10 | High at 21:21

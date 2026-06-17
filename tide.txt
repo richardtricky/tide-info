@@ -1,7 +1,7 @@
-16-06-2026 (Tue): Low at 02:11 | High at 08:28 | Low at 14:36 | High at 20:47
 17-06-2026 (Wed): Low at 03:05 | High at 09:20 | Low at 15:25 | High at 21:37
 18-06-2026 (Thu): Low at 03:55 | High at 10:09 | Low at 16:10 | High at 22:26
 19-06-2026 (Fri): Low at 04:42 | High at 10:57 | Low at 16:52 | High at 23:14
 20-06-2026 (Sat): Low at 05:26 | High at 11:44 | Low at 17:34
 21-06-2026 (Sun): High at 00:02 | Low at 06:09 | High at 12:32 | Low at 18:17
 22-06-2026 (Mon): High at 00:53 | Low at 06:54 | High at 13:23 | Low at 19:07
+23-06-2026 (Tue): High at 01:47 | Low at 07:44 | High at 14:18 | Low at 20:06

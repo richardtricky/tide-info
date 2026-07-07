@@ -1,8 +1,7 @@
-06-07-2026 (Mon): Low at 05:13 | High at 11:27 | Low at 17:19 | High at 23:47
 07-07-2026 (Tue): Low at 05:52 | High at 12:09 | Low at 18:02
 08-07-2026 (Wed): High at 00:36 | Low at 06:39 | High at 13:01 | Low at 18:56
 09-07-2026 (Thu): High at 01:36 | Low at 07:39 | High at 14:05 | Low at 20:06
 10-07-2026 (Fri): High at 02:48 | Low at 08:53 | High at 15:22 | Low at 21:32
 11-07-2026 (Sat): High at 04:05 | Low at 10:14 | High at 16:39 | Low at 22:52
 12-07-2026 (Sun): High at 05:18 | Low at 11:30 | High at 17:48
-13-07-2026 (Mon): Low at 00:05
+13-07-2026 (Mon): Low at 00:05 | High at 06:25 | Low at 12:37 | High at 18:51

@@ -1,7 +1,8 @@
-18-08-2026 (Tue): Low at 04:57 | High at 11:09 | Low at 17:02 | High at 23:20
 19-08-2026 (Wed): Low at 05:18 | High at 11:35 | Low at 17:27 | High at 23:50
 20-08-2026 (Thu): Low at 05:44 | High at 12:07 | Low at 18:00
 21-08-2026 (Fri): High at 00:31 | Low at 06:25 | High at 12:57 | Low at 18:57
 22-08-2026 (Sat): High at 01:38 | Low at 07:39 | High at 14:23 | Low at 20:40
 23-08-2026 (Sun): High at 03:20 | Low at 09:26 | High at 16:13 | Low at 22:20
 24-08-2026 (Mon): High at 04:51 | Low at 10:53 | High at 17:24 | Low at 23:28
+25-08-2026 (Tue): High at 05:50 | Low at 11:52 | High at 18:15
+26-08-2026 (Wed): Low at 00:19

@@ -1,8 +1,7 @@
-18-09-2026 (Fri): Low at 04:57 | High at 11:24 | Low at 17:15 | High at 23:44
 19-09-2026 (Sat): Low at 05:30 | High at 12:09 | Low at 18:04
 20-09-2026 (Sun): High at 00:48 | Low at 06:35 | High at 13:38 | Low at 20:01
 21-09-2026 (Mon): High at 02:38 | Low at 08:56 | High at 15:38 | Low at 21:55
 22-09-2026 (Tue): High at 04:22 | Low at 10:29 | High at 16:54 | Low at 23:04
 23-09-2026 (Wed): High at 05:22 | Low at 11:27 | High at 17:45 | Low at 23:53
 24-09-2026 (Thu): High at 06:08 | Low at 12:13 | High at 18:27
-25-09-2026 (Fri): Low at 00:37
+25-09-2026 (Fri): Low at 00:37 | High at 06:48 | Low at 12:56 | High at 19:06

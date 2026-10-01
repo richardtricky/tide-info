@@ -1,7 +1,7 @@
-30-09-2026 (Wed): Low at 03:36 | High at 09:44 | Low at 15:49 | High at 22:05
 01-10-2026 (Thu): Low at 04:06 | High at 10:19 | Low at 16:20 | High at 22:43
 02-10-2026 (Fri): Low at 04:40 | High at 11:00 | Low at 16:57 | High at 23:28
 03-10-2026 (Sat): Low at 05:22 | High at 11:51 | Low at 17:48
 04-10-2026 (Sun): High at 00:32 | Low at 06:23 | High at 13:05 | Low at 19:17
 05-10-2026 (Mon): High at 02:08 | Low at 08:23 | High at 14:47 | Low at 21:34
 06-10-2026 (Tue): High at 03:50 | Low at 10:04 | High at 16:21 | Low at 22:54
+07-10-2026 (Wed): High at 05:03 | Low at 11:11 | High at 17:27 | Low at 23:50

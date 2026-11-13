@@ -1,7 +1,7 @@
-12-11-2026 (Thu): Low at 02:01 | High at 08:10 | Low at 14:17 | High at 20:25
 13-11-2026 (Fri): Low at 02:26 | High at 08:39 | Low at 14:43 | High at 20:55
 14-11-2026 (Sat): Low at 02:49 | High at 09:08 | Low at 15:09 | High at 21:26
 15-11-2026 (Sun): Low at 03:15 | High at 09:42 | Low at 15:42 | High at 22:02
 16-11-2026 (Mon): Low at 03:49 | High at 10:25 | Low at 16:26 | High at 22:51
 17-11-2026 (Tue): Low at 04:38 | High at 11:25 | Low at 17:29 | High at 23:58
 18-11-2026 (Wed): Low at 05:50 | High at 12:42 | Low at 18:50
+19-11-2026 (Thu): High at 01:16 | Low at 07:23 | High at 13:55 | Low at 20:08
